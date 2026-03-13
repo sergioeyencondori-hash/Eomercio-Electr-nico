@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}TechStore - Acerca de{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-12">
+            <h2>Acerca de TechStore</h2>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Nuestra Historia</h3>
+            <p>Fundada en 2015, TechStore nació con la misión de acercar la tecnología de punta a todos los hogares. Comenzamos como un pequeño emprendimiento y hoy somos referentes en el sector.</p>
+            <h3>Misión</h3>
+            <p>Ofrecer productos de alta calidad con la mejor experiencia de compra, asesoramiento personalizado y soporte postventa.</p>
+            <h3>Visión</h3>
+            <p>Convertirnos en la tienda de tecnología líder de Latinoamérica, reconocida por nuestra innovación y servicio al cliente.</p>
+        </div>
+        <div class="col-md-6">
+            <!-- Video de YouTube relacionado -->
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+            </div>
+            <p class="mt-2 text-muted">Video: El futuro de la tecnología</p>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-12">
+            <h3>Equipo de Trabajo</h3>
+        </div>
+        <div class="col-md-3 text-center">
+            <img src="{% static 'img/equipo1.jpg' %}" class="rounded-circle img-fluid" style="width: 150px; height: 150px; object-fit: cover;" alt="Ana">
+            <h5 class="mt-2">Ana Pérez</h5>
+            <p>CEO & Fundadora</p>
+        </div>
+        <div class="col-md-3 text-center">
+            <img src="{% static 'img/equipo2.jpg' %}" class="rounded-circle img-fluid" style="width: 150px; height: 150px; object-fit: cover;" alt="Carlos">
+            <h5 class="mt-2">Carlos Gómez</h5>
+            <p>Desarrollador</p>
+        </div>
+        <div class="col-md-3 text-center">
+            <img src="{% static 'img/equipo3.jpg' %}" class="rounded-circle img-fluid" style="width: 150px; height: 150px; object-fit: cover;" alt="Lucía">
+            <h5 class="mt-2">Lucía Fernández</h5>
+            <p>Marketing</p>
+        </div>
+        <div class="col-md-3 text-center">
+            <img src="{% static 'img/equipo4.jpg' %}" class="rounded-circle img-fluid" style="width: 150px; height: 150px; object-fit: cover;" alt="Jorge">
+            <h5 class="mt-2">Jorge Rodríguez</h5>
+            <p>Atención al cliente</p>
+        </div>
+    </div>
+{% endblock %}
